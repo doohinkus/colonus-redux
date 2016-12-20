@@ -1,0 +1,19 @@
+.navigation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $dark-gray;
+  // overflow: hidden;
+  h1{
+    align-self: flex-start;
+    color: white;
+  }
+  .links{
+    display: flex;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

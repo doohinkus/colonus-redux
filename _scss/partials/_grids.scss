@@ -1,0 +1,9 @@
+.container{
+  @include outer-container(75%);
+  .side{
+    @include span-columns(6);
+  }
+   h3{
+    @include omega();
+  }
+}
