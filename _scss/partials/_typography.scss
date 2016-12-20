@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo|Questrial');
+body{
+  color: $dark-gray;
+}
 h1{
   font-family: $serif;
 }
@@ -12,12 +15,15 @@ article.type-system-geometric {
   *:not(img){
     text-align: left;
   }
+
+
   img{
     text-align: center;
   }
 
   h1, h2, h3, p {
     margin: 0;
+    color: $dark-gray;
   }
 
   hr {

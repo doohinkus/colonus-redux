@@ -1,7 +1,7 @@
 @media screen and (max-width: $tablet){
   .navigation{
     .links{
-      display: none;
+      display: none !important;
     }
     .secret-nav{
       display: block;
@@ -13,9 +13,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: $dark-gray;
+  // justify-content: center;
+  background-color: $accent-blue;
+  height: 100px;
   h1{
     align-self: flex-start;
+    align-content: center;
     color: white;
   }
   .links{

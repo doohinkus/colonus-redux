@@ -14,7 +14,10 @@ html, body {
   box-sizing: inherit; }
 
 div {
-  border: 1px dashed orange; }
+  border: 1px dashed transparent; }
+
+body {
+  color: #23232B; }
 
 h1 {
   font-family: "Arvo", serif; }
@@ -33,7 +36,8 @@ article.type-system-geometric {
   article.type-system-geometric img {
     text-align: center; }
   article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p {
-    margin: 0; }
+    margin: 0;
+    color: #23232B; }
   article.type-system-geometric hr {
     border-bottom: 1px solid #F6F6F6;
     border-left: 0;
@@ -138,29 +142,48 @@ article.type-system-geometric {
 .float-right {
   float: right; }
 
+.container .row {
+  padding: 15px;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container .row::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .container .row .col-6 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .container .row .col-6:last-child {
+      margin-right: 0; }
+@media screen and (max-width: 820px) {
+  .container .row {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    .container .row::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .container .row .col-6 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .container .row .col-6:last-child {
+        margin-right: 0; } }
+
 @media screen and (max-width: 820px) {
   article img, article img.float-right {
     float: none;
     display: block;
     margin: auto;
-    max-width: 50%; } }
-.container {
-  max-width: 75%;
-  margin-left: auto;
-  margin-right: auto; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: block; }
-  @media screen and (min-width: 1355px) {
-    .container {
-      width: 1355px; } }
-  .container h3 {
-    margin-right: 0; }
-
+    width: 30%; } }
 @media screen and (max-width: 820px) {
   .navigation .links {
-    display: none; }
+    display: none !important; }
   .navigation .secret-nav {
     display: block; } }
 .navigation {
@@ -168,9 +191,11 @@ article.type-system-geometric {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #23232B; }
+  background-color: #0176D5;
+  height: 100px; }
   .navigation h1 {
     align-self: flex-start;
+    align-content: center;
     color: white; }
   .navigation .links {
     display: flex; }
@@ -193,26 +218,30 @@ article.type-system-geometric {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #23232B;
+  background-color: #0176D5;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 9999; }
+  z-index: 9999;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
-  border-bottom: 1px solid #5c5c71;
+  border-bottom: 1px solid #57b3fe;
   display: block;
-  -webkit-transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in; }
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
   .dropdown-content a:hover {
-    background-color: #454555; }
+    background-color: #259dfe; }
 
 .dropdown-content a:last-of-type {
-  border: none; }
+  border: none;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
 
 /* Change color of dropdown links on hover */
 /* Show the dropdown menu on hover */

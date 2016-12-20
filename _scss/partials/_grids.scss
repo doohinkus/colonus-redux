@@ -1,22 +1,20 @@
 
-@media screen and (max-width: $tablet){
-  article{
-    img, img.float-right{
-      float: none;
-      display: block;
-      margin: auto;
-      max-width: 50%;
+.container{
+  .row{
+    padding: $padding;
+    @include outer-container(75%);
+    .col-6{
+      @include span-columns(6);
     }
   }
-}
-.container{
-  @include outer-container(75%);
-  @media screen and (min-width: $large){
-    width: $large;
-  }
 
-
- h3{
-    @include omega();
+  @media screen and (max-width: $tablet){
+    .row{
+      @include outer-container(95%);
+      .col-6{
+        @include span-columns(12);
+      }
+      // background-color: red;
+    }
   }
 }
