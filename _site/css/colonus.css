@@ -119,6 +119,31 @@ article.type-system-geometric {
   article.type-system-geometric p.author {
     font-family: "Questrial", sans-serif; }
 
+.secret-nav {
+  display: none; }
+
+.responsive {
+  max-width: 100%; }
+
+.center {
+  margin: auto;
+  display: block; }
+
+.padding {
+  padding: 15px; }
+
+.circle {
+  border-radius: 50%; }
+
+.float-right {
+  float: right; }
+
+@media screen and (max-width: 820px) {
+  article img, article img.float-right {
+    float: none;
+    display: block;
+    margin: auto;
+    max-width: 50%; } }
 .container {
   max-width: 75%;
   margin-left: auto;
@@ -127,16 +152,17 @@ article.type-system-geometric {
     clear: both;
     content: "";
     display: block; }
-  .container .side {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .container .side:last-child {
-      margin-right: 0; }
+  @media screen and (min-width: 1355px) {
+    .container {
+      width: 1355px; } }
   .container h3 {
     margin-right: 0; }
 
+@media screen and (max-width: 820px) {
+  .navigation .links {
+    display: none; }
+  .navigation .secret-nav {
+    display: block; } }
 .navigation {
   display: flex;
   flex-direction: row;
@@ -196,12 +222,3 @@ article.type-system-geometric {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #D9593D; }
-
-article img {
-  margin: auto;
-  display: block;
-  max-width: 100%;
-  padding: 15px; }
-article .circle {
-  border-radius: 50%;
-  float: right; }

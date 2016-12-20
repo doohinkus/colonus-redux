@@ -1,9 +1,22 @@
+
+@media screen and (max-width: $tablet){
+  article{
+    img, img.float-right{
+      float: none;
+      display: block;
+      margin: auto;
+      max-width: 50%;
+    }
+  }
+}
 .container{
   @include outer-container(75%);
-  .side{
-    @include span-columns(6);
+  @media screen and (min-width: $large){
+    width: $large;
   }
-   h3{
+
+
+ h3{
     @include omega();
   }
 }
