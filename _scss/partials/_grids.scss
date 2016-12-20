@@ -7,7 +7,6 @@
       @include span-columns(6);
     }
   }
-
   @media screen and (max-width: $tablet){
     .row{
       @include outer-container(95%);
@@ -17,4 +16,5 @@
       // background-color: red;
     }
   }
+
 }

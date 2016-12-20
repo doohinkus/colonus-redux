@@ -5,6 +5,10 @@
     }
     .secret-nav{
       display: block;
+      a{
+
+        color: white;
+      }
     }
   }
 }
@@ -13,9 +17,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  // justify-content: center;
   background-color: $accent-blue;
-  height: 100px;
+
   h1{
     align-self: flex-start;
     align-content: center;

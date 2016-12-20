@@ -8,7 +8,7 @@ h1{
 .navigation{
   font-family: $sans-serif;
 }
-article.type-system-geometric {
+article.type-system-geometric,  .books, .middle-content {
   @include clearfix;
   font-family: $sans-serif;
   // text-align: left;

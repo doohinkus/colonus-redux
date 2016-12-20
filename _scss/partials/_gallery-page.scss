@@ -1,0 +1,95 @@
+.books{
+  border-color: green;
+  width: 75%;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // border-color: green;
+  // align-content: flex-end;
+  .book-wrapper{
+    flex-basis: 30%;
+    display: flex;
+    padding: $padding;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $tablet){
+      flex-basis: 50%;
+      // border-color: green;
+    }
+    @media (max-width: $mobile){
+      flex-basis: 80%;
+      .book{
+        width: 100% !important;
+        img{
+
+          // border: 5px solid red
+        }
+      }
+      // border-color: green;
+
+    }
+
+    .book{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+        box-shadow: 0px 6px 35px -15px rgba($dark-gray, .8);
+      .author{
+        font-style: italic;
+      }
+      overflow: hidden;
+      img{
+        width: 100%;
+
+      }
+      &:hover .overlay{
+        opacity: 1;
+        background-color: rgba($dark-gray, .7);
+        bottom: 0;
+      }
+      .overlay{
+        transition: bottom .3s ease-in-out;
+        background-color: $dark-gray;
+        position: absolute;
+        opacity: 0;
+        bottom: -100px;
+        width: 100%;
+        // margin-left: 20%;
+        color: white;
+        padding: $padding;
+        h4{
+          margin: 0;
+        }
+      }
+    }
+    .book-description{
+      .author{
+        font-style: italic;
+      }
+    }
+    .book-social{
+      display: flex;
+      // flex-grow: 1;
+      // border-color: red;
+      width: 100%;
+      justify-content: space-between;
+      .twitter{
+        color: $accent-blue;
+      }
+      .facebook{
+        color: $accent-blue;
+      }
+
+      .fa{
+        // padding: $padding;
+
+        transition: color .3s ease-in-out;
+        cursor: pointer;
+      }
+      .fa:hover{
+        color: $dark-gray;
+      }
+    }
+  }
+}
