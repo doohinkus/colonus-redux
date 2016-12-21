@@ -5,8 +5,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // border-color: green;
-  // align-content: flex-end;
   .book-wrapper{
     flex-basis: 30%;
     display: flex;
@@ -34,7 +32,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-        box-shadow: 0px 6px 35px -15px rgba($dark-gray, .8);
+      box-shadow: 0px 6px 35px -15px rgba($dark-gray, .8);
       .author{
         font-style: italic;
       }
@@ -47,17 +45,19 @@
         opacity: 1;
         background-color: rgba($dark-gray, .7);
         bottom: 0;
+        // transform: scale(1);
       }
       .overlay{
         transition: bottom .3s ease-in-out;
         background-color: $dark-gray;
         position: absolute;
         opacity: 0;
-        bottom: -100px;
+        bottom: -200px;
         width: 100%;
-        // margin-left: 20%;
+        height: 100%;
         color: white;
         padding: $padding;
+        // transform: scale(.6);
         h4{
           margin: 0;
         }
@@ -70,25 +70,23 @@
     }
     .book-social{
       display: flex;
-      // flex-grow: 1;
-      // border-color: red;
       width: 100%;
-      justify-content: space-between;
-      .twitter{
-        color: $accent-blue;
-      }
-      .facebook{
-        color: $accent-blue;
-      }
+      justify-content: space-around;
+      color: lighten($dark-gray, 30%);
+      // .twitter{
+      //   color: $accent-blue;
+      // }
+      // .facebook{
+      //   color: $accent-blue;
+      // }
 
       .fa{
-        // padding: $padding;
-
-        transition: color .3s ease-in-out;
+        transition: color .3s ease-in-out .2s, transform .2s ease-in;
         cursor: pointer;
       }
       .fa:hover{
-        color: $dark-gray;
+        color: $accent-blue;
+        transform: scale(1.2);
       }
     }
   }

@@ -8,6 +8,17 @@ h1{
 .navigation{
   font-family: $sans-serif;
 }
+.books{
+  .book-wrapper{
+    .book-description{
+      .title{
+        h3{
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
 article.type-system-geometric,  .books, .middle-content {
   @include clearfix;
   font-family: $sans-serif;
@@ -15,7 +26,6 @@ article.type-system-geometric,  .books, .middle-content {
   *:not(img){
     text-align: left;
   }
-
 
   img{
     text-align: center;

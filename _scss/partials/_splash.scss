@@ -1,48 +1,29 @@
 .navigation{
-  height: 70px;
+  height: $nav-size;
 }
 .container{
   position: relative;
 }
 .margin .book-wrapper{
-  margin-top: 60px;
-  border-color: red;
+  // margin-top: 60px;
+  // border-color: red;
 }
 .splash{
   text-align: center;
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 .books{
   position: relative;
 }
-.book-wrapper:first-of-type:before{
-  // border-color: black;
+.book-wrapper:first-of-type:before, article:after, .middle-content:after{
   position: absolute;
-  // top: 20px;
   content:"";
   bottom: -30px;
   left: 50%;
   transform: translateX(-35px);
-
   @include triangle(70px, white, down);
 }
-// .navigation{
-//   position: relative;
-// }
-.logo{
-  width: 120px;
-  position: absolute;
-  margin-top: 25px;
-  height: 120px;
-  background-color: white;
-  border-radius: 50%;
-  overflow:hidden;
-  box-shadow: 0 1px 1px rgba($dark-gray, .4);
-  img{
-    margin-top: 13px;
-    width: 65%;
-  }
-}
+
 
 .middle-content{
   overflow: hidden;
@@ -90,7 +71,5 @@
   div{
     padding: $padding;
   }
-  // .writers, .readers, .colonus{
 
-  // }
 }

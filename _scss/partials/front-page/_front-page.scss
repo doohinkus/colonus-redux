@@ -17,11 +17,10 @@ article{
     width: 95%;
     .row{
       flex-direction: column;
-      border: 5px dashed red;
       img{
         float: none;
         clear: both;
-        max-width: 100%;
+        max-width: 50%;
         display: block;
         margin: auto;
       }

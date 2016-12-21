@@ -1,0 +1,86 @@
+@include keyframes (slidein) {
+    0% {
+        margin-top:-900px;
+        opacity: 0;
+    }
+    65%{
+      margin-top: 0px;
+      // opacity: 1;
+    }
+    85%{
+      margin-top: -30px;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@include keyframes(fadein){
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@include keyframes(grow){
+  0% {
+    @include transform(scale(.8));
+  }
+  70%{
+    @include transform(scale(1.3));
+
+  }
+  100%{
+    @include transform(scale(1));
+  }
+}
+
+@include keyframes(spin) {
+  0% {
+    @include transform(rotate(-10deg));
+  }
+  70%{
+    @include transform(rotate(380deg));
+
+  }
+  100%{
+    @include transform(rotate(0deg));
+  }
+}
+
+.container{
+  article{
+    @include animation(fadein .9s ease-in-out);
+  }
+  .splash, .books{
+    // @include animation(slidein .3s ease-in-out);
+  }
+  //books slide in
+  @for $i from 1 through 5 {
+  .book-wrapper:nth-child(#{$i}) {
+    opacity: 0;
+    @include animation (slidein .3s ease-in-out #{$i/3}s forwards);
+    // your Styles here
+  }
+}
+  // .book-wrapper{
+  //
+  //   @include animation (slidein .3s ease-in-out);
+  // }
+}
+
+
+.dropdown i{
+  transition: transform .3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    @include animation (fadein .5s ease-in-out);
+}
+
+.dropdown:hover i{
+  transform: rotate(90deg);
+  opacity: 0;
+}

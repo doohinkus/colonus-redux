@@ -1,13 +1,45 @@
 ---
   layout: landing-page
 ---
-<div class="navigation">
+<!-- <div class="navigation">
   <div class="logo">
     <img src="img/logo.jpg" class="center responsive" alt="colonus logo" />
   </div>
+</div> -->
+<h1 class="splash">Featured Books</h1>
+<div class="books margin triangle">
+{% for book in site.data.featured %}
+  <div class="book-wrapper">
+    <div class="book">
+      <img src="img/book-covers/{{book.image}}" class="responsive center" alt="{{book.title}}" />
+      <div class="overlay">
+        <div class="title">
+          <h4>{{book.title}}</h4>
+        </div>
+        <div class="author">
+          {{book.author}}
+        </div>
+      </div><!--end overlay-->
+    </div><!--end book-->
+    <div class="book-description">
+      <div class="title">
+        <h3>{{book.title}}</h3>
+      </div>
+      <div class="author">
+        {{book.author}}
+      </div>
+    </div><!--end book description-->
+    <div class="book-social">
+      <div class="twitter">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="facebook">
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+      </div>
+    </div><!--end books social-->
+  </div><!--end book-wrapper-->
+{% endfor %}
 </div>
-<h1 class="splash">featured books</h1>
-{% include splash-books.html %}
 <div class="middle-content">
   <div class="writers">
     <img src="img/writer.png" class="responsive" alt="writer" />

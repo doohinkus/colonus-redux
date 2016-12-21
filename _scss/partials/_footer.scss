@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $light-blue;
+  color: white;
+  width: 100%;
+  height: $footer-height;
+  div{
+    a{
+      color: white;
+    }
+    a:hover i{
+      @include animation(spin .6s ease-in-out, grow .2s ease-in .5s);
+    }
+  }
+}
