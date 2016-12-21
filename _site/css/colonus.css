@@ -197,39 +197,6 @@ article.type-system-geometric, .books, .middle-content {
   .sliding-panel-button img {
     height: 1.3em; }
 
-.container .row {
-  padding: 15px;
-  max-width: 75%;
-  margin-left: auto;
-  margin-right: auto; }
-  .container .row::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .container .row .col-6 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .container .row .col-6:last-child {
-      margin-right: 0; }
-@media screen and (max-width: 820px) {
-  .container .row {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto; }
-    .container .row::after {
-      clear: both;
-      content: "";
-      display: block; }
-    .container .row .col-6 {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .container .row .col-6:last-child {
-        margin-right: 0; } }
-
 .navigation {
   height: 70px; }
 
@@ -307,12 +274,6 @@ article.type-system-geometric, .books, .middle-content {
   .middle-content div {
     padding: 15px; }
 
-@media screen and (max-width: 820px) {
-  article img, article img.float-right {
-    float: none;
-    display: block;
-    margin: auto;
-    width: 30%; } }
 @media screen and (max-width: 820px) {
   .navigation .links {
     display: none !important; }
@@ -446,3 +407,24 @@ article.type-system-geometric, .books, .middle-content {
         cursor: pointer; }
       .books .book-wrapper .book-social .fa:hover {
         color: #23232B; }
+
+article {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
+  article .row:first-of-type {
+    display: flex; }
+
+@media screen and (max-width: 820px) {
+  article {
+    width: 95%; }
+    article .row {
+      flex-direction: column;
+      border: 5px dashed red; }
+      article .row img {
+        float: none;
+        clear: both;
+        max-width: 100%;
+        display: block;
+        margin: auto; } }
