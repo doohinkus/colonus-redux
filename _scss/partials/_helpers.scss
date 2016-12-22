@@ -17,10 +17,25 @@
 }
 .circle{
   border-radius: 50%;
+  shape-outside: circle() !important;
+
+  // width: 25%;
+	// height: auto;
+	// float: left;
+	// margin-right:2rem;
+	// border-radius: 50%;
+	// shape-outside:circle()
+}
+.circle-wrap{
+  border-radius: 50%;
+  -webkit-shape-outside: circle() !important;
+   shape-outside: circle() !important;
 }
 .float-right{
   float: right;
+  @extends .circle-wrap;
 }
 .float-left{
   float: left;
+  @extends .circle-wrap;
 }

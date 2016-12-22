@@ -1,6 +1,19 @@
 @media screen and (max-width: $tablet){
   .navigation{
+    .logo{
+      transition: width .3s ease-in-out, height .3s ease-in-out;
 
+      margin-top: 0 !important;
+      width: 70px !important;
+      height: 70px !important;
+      img{
+        margin-top: 3px;
+        width: 65%;
+      }
+
+      // border: 5px solid darken($accent-blue, 7%);
+    }
+    justify-content: space-between;
     .links{
       display: none !important;
     }
@@ -15,12 +28,7 @@
 .container{
   margin-top: $nav-offset;
 }
-.logo{
-  transition: transform .2s ease-in-out;
-}
-.logo:hover{
-  transform: scale(1.2);
-}
+
 .navigation{
   box-shadow: 0 7px 0 rgba(darken($accent-blue, 5%), 1);
   position: fixed;
