@@ -1,0 +1,7 @@
+---
+layout: default
+author: Dan Morris
+image: dan-morris.png
+float: left
+---
+Dan Morris grew up in the foothills of the Cascade Mountains, just east of Seattle. He earned the Ph.D. in Creative Writing (Poetry) and Literature from the University of Southern Mississippi's Center for Writers, an M.F.A. in Creative Writing from Eastern Washington University, and a B.A. in English from the University of Utah. His central interests include poetry writing, contemporary American poetry and poetics, nature writing, and ecocriticism. The work of Theodore Roethke, Richard Hugo, and other nature-centric narrative poets connected to the Pacific Northwest are the center of his research. His chapbook, <em>Following the Day</em>, was published by Pudding House in 2007, and his recent poems have appeared or are forthcoming in <em>The Cape Rock</em>, <em>Connecticut Review</em>, <em>Red Rock Review</em>, <em>Xavier Review</em>, <em>Poetry South</em>, and others. Since 2009 he has served as senior editor for the online poetry journal, <em>Town Creek Poetry. </em>He has published several poems in <em>The Southern Poetry Anthology</em> and will be volume co-editor of a forthcoming edition of the series focusing on Alabama's poets. He is also in the planning stages to co-edit a volume featuring contemporary poetry of the Pacific Northwest, as well as an edition of critical essays exploring Richard Hugo's poetics.

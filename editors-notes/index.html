@@ -1,0 +1,15 @@
+---
+layout: default
+title: Editor's Notes
+---
+<article class="type-system-geometric">
+  {% assign editor-var = site.pages | if editor-var.editor != null %}
+    <h2>Letter to Reader</h2>
+    <div class="row">
+      {% for editor-man in editor-var %}
+        {{editor-man.content | markdownify}}
+      {% endfor %}
+    </div>
+
+
+</article>

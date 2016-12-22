@@ -4,10 +4,10 @@ article{
   display: flex;
   flex-direction: column;
   min-height: 65vh;
-  .row:nth-of-type(2){
-    display: flex;
-    align-items: flex-start;
-  }
+  // .row:nth-of-type(2){
+  //   display: flex;
+  //   align-items: flex-start;
+  // }
 }
 
 @media screen and (max-width: $tablet){

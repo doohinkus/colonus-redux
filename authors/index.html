@@ -1,0 +1,22 @@
+---
+layout: default
+title: Authors
+---
+<article class="type-system-geometric">
+  {% assign authors = site.pages | if author.author != null %}
+  {% for author in authors %}
+    {% assign mod = forloop.index | modulo: 2 %}
+
+    <!-- {% if author.author != null %} -->
+    <h2>{{author.author}}</h2>
+    <div class="row">
+      {% if author.float == "left" %}
+        <img src="{{site.baseurl}}/img/{{author.image}}" class="circle float-left responsive padding" alt="{{author.author}}" />
+      {% else %}
+        <img src="{{site.baseurl}}/img/{{author.image}}" class="circle float-right responsive padding" alt="{{author.author}}" />
+      {% endif %}
+      {{author.content | markdownify}}
+    </div>
+    <!-- {% endif %} -->
+  {% endfor %}
+</article>

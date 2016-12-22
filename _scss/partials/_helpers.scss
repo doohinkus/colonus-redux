@@ -15,6 +15,9 @@
 .padding{
   padding: $padding;
 }
+.row{
+  @include clearfix();
+}
 
 .circle{
 
