@@ -3,7 +3,8 @@ html, body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // height: 100%;
+
+
 }
 h1{
   // margin: 0;
@@ -12,6 +13,6 @@ h1{
   box-sizing: inherit;
 
 }
- div{
-  //  border: 1px dashed orange;
+ div, body{
+   border: 1px dashed orange;
  }

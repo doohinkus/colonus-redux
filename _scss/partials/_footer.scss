@@ -1,11 +1,30 @@
+body{
+  // height: 100vh;
+  position: relative;
+}
+.container{
+  // min-height: 85vh;
+  // display: flex;
+  // flex-direction: column;
+}
 .footer{
+  border-color: red;
   display: flex;
+  flex-grow: 1;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   background-color: $accent-blue;
   color: white;
-  width: 100%;
+  text-align: center;
   height: $footer-height;
+
+
+  div{
+    margin: auto;
+  }
+
+
   div{
     a{
       color: white;
@@ -13,5 +32,10 @@
     a:hover i{
       @include animation(spin .6s ease-in-out, grow .2s ease-in .5s);
     }
+  }
+  &:after{
+  content: "";
+  display: block;
+
   }
 }
