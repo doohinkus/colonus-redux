@@ -5,13 +5,10 @@ article{
   flex-direction: column;
   .row:first-of-type{
     display: flex;
+    align-items: flex-start;
   }
 }
-article{
-  img{
-    // max-width: 30%;
-  }
-}
+
 @media screen and (max-width: $tablet){
   article{
     width: 95%;

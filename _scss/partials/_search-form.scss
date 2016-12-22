@@ -1,0 +1,27 @@
+.field {
+  display:flex;
+  position:realtive;
+  margin:5em auto;
+  width:60%;
+  flex-direction:row;
+  // box-shadow: 0 7px 0 rgba(darken($accent-blue, 5%), 1);
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em $sans-serif;
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid lighten($accent-blue, 5%);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:lighten($accent-blue, 5%);
+  color:white;
+  border:none;
+}

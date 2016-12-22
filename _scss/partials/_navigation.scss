@@ -1,5 +1,6 @@
 @media screen and (max-width: $tablet){
   .navigation{
+
     .links{
       display: none !important;
     }
@@ -21,6 +22,7 @@
   transform: scale(1.2);
 }
 .navigation{
+  box-shadow: 0 7px 0 rgba(darken($accent-blue, 5%), 1);
   position: fixed;
   top:0;
   width: 100%;
