@@ -15,16 +15,16 @@
 .padding{
   padding: $padding;
 }
+
 .circle{
-  border-radius: 50%;
-  shape-outside: circle() !important;
+
 
   // width: 25%;
 	// height: auto;
 	// float: left;
 	// margin-right:2rem;
-	// border-radius: 50%;
-	// shape-outside:circle()
+	border-radius: 50%;
+	shape-outside:circle();
 }
 .circle-wrap{
   border-radius: 50%;
@@ -32,10 +32,12 @@
    shape-outside: circle() !important;
 }
 .float-right{
+  display: inline-block;
   float: right;
   @extends .circle-wrap;
 }
 .float-left{
+  display: inline-block;
   float: left;
   @extends .circle-wrap;
 }

@@ -322,17 +322,21 @@ h1 {
   padding: 15px; }
 
 .circle {
-  border-radius: 50%; }
-
-.circle-wrap {
-  -webkit-shape-outside: circle();
+  border-radius: 50%;
   shape-outside: circle(); }
 
+.circle-wrap {
+  border-radius: 50%;
+  -webkit-shape-outside: circle() !important;
+  shape-outside: circle() !important; }
+
 .float-right {
+  display: inline-block;
   float: right;
   @extends .circle-wrap; }
 
 .float-left {
+  display: inline-block;
   float: left;
   @extends .circle-wrap; }
 

@@ -2,7 +2,9 @@ article{
   width: 75%;
   margin: auto;
   display: flex;
+  // flex-grow: 0 !important;
   flex-direction: column;
+
   .row:first-of-type{
     display: flex;
     align-items: flex-start;
