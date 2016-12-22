@@ -158,18 +158,24 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     opacity: 1; } }
 @-webkit-keyframes fadein {
   from {
+    margin-top: 400px;
     opacity: 0; }
   to {
+    margin-top: 0;
     opacity: 1; } }
 @-moz-keyframes fadein {
   from {
+    margin-top: 400px;
     opacity: 0; }
   to {
+    margin-top: 0;
     opacity: 1; } }
 @keyframes fadein {
   from {
+    margin-top: 400px;
     opacity: 0; }
   to {
+    margin-top: 0;
     opacity: 1; } }
 @-webkit-keyframes grow {
   0% {
@@ -238,9 +244,9 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
 .container article {
-  -webkit-animation: fadein 0.9s ease-in-out;
-  -moz-animation: fadein 0.9s ease-in-out;
-  animation: fadein 0.9s ease-in-out; }
+  -webkit-animation: fadein 0.9s ease-in-out forwards;
+  -moz-animation: fadein 0.9s ease-in-out forwards;
+  animation: fadein 0.9s ease-in-out forwards; }
 .container .book-wrapper:nth-child(1) {
   opacity: 0;
   -webkit-animation: slidein 0.3s ease-in-out 0.33333s forwards;
@@ -282,6 +288,9 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
 
 .secret-nav {
   display: none; }
+
+.padded {
+  padding: 15px; }
 
 .responsive {
   max-width: 100%;
@@ -425,23 +434,33 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
   position: realtive;
   margin: 5em auto;
   width: 60%;
-  flex-direction: row; }
+  flex-direction: row;
+  -webkit-animation: fadein 0.4s ease-in;
+  -moz-animation: fadein 0.4s ease-in;
+  animation: fadein 0.4s ease-in; }
 
 .field > input[type=text],
 .field > button {
   display: block;
   font: 1.2em "Questrial", sans-serif; }
 
-.field > input[type=text] {
+input[type=text] {
   flex: 1;
   padding: 0.6em;
-  border: 0.2em solid #0184ee; }
+  border: 0.2em solid #0184ee;
+  transition: border-color .5s ease-in-out; }
 
-.field > button {
+button {
   padding: 0.6em 0.8em;
   background-color: #0184ee;
   color: white;
-  border: none; }
+  border: none;
+  transition: background-color .5s ease-in-out; }
+  button:hover {
+    background-color: #23232B; }
+
+button:hover + input[type=text] {
+  border-color: #23232B; }
 
 .footer {
   display: flex;

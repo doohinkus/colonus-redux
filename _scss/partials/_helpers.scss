@@ -1,6 +1,9 @@
 .secret-nav{
   display: none;
 }
+.padded{
+  padding: $padding;
+}
 .responsive{
   max-width: 100%;
   max-height: 100%;

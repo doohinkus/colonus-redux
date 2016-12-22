@@ -17,9 +17,11 @@
 }
 @include keyframes(fadein){
   from{
+    margin-top:400px;
     opacity: 0;
   }
   to{
+    margin-top:0;
     opacity: 1;
   }
 }
@@ -48,10 +50,12 @@
     @include transform(rotate(0deg));
   }
 }
-
+.navigation{
+  // @include animation(fadein .9s ease-in-out);
+}
 .container{
   article{
-    @include animation(fadein .9s ease-in-out);
+    @include animation(fadein .9s ease-in-out forwards);
   }
   .splash, .books{
     // @include animation(slidein .3s ease-in-out);
