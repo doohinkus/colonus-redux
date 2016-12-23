@@ -147,7 +147,7 @@
 
   <div class="book-wrapper">
     <div class="book">
-      <img src="img/book-covers/book-holder.jpg" class="responsive center" alt="Leaving Parma" />
+      <img src="img/book-covers/book-cover.png" class="responsive center" alt="Leaving Parma" />
       <div class="overlay">
         <div class="title">
           <h4>Leaving Parma</h4>
@@ -208,7 +208,7 @@
 
 <p><div class="book-wrapper">
     <div class="book">
-      <img src="img/book-covers/book-holder.jpg" class="responsive center" alt="Fudge Day" />
+      <img src="img/book-covers/book-cover.png" class="responsive center" alt="Fudge Day" />
       <div class="overlay">
         <div class="title">
           <h4>Fudge Day</h4>
@@ -268,7 +268,7 @@
 
 <p><div class="book-wrapper">
     <div class="book">
-      <img src="img/book-covers/book-holder.jpg" class="responsive center" alt="Charon's Keep" />
+      <img src="img/book-covers/book-cover.png" class="responsive center" alt="Charon's Keep" />
       <div class="overlay">
         <div class="title">
           <h4>Charon&#39;s Keep</h4>
@@ -1130,118 +1130,6 @@ article {
 </article>
 
       
-        <h1 class="splash">Featured Books</h1>
-
-<div class="books margin triangle">
-
-  <div class="book-wrapper">
-    <div class="book">
-      <img src="img/book-covers/book-holder.jpg" class="responsive center" alt="Leaving Parma" />
-      <div class="overlay">
-        <div class="title">
-          <h4>Leaving Parma</h4>
-        </div>
-        <div class="author">
-          Angie Sarich
-        </div>
-      </div><!--end overlay-->
-    </div><!--end book-->
-    <div class="book-description">
-      <div class="title">
-        <h3>Leaving Parma</h3>
-      </div>
-      <div class="author">
-        Angie Sarich
-      </div>
-    </div><!--end book description-->
-    <div class="book-social">
-      <div class="twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-      </div>
-      <div class="facebook">
-        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-      </div>
-    </div><!--end books social-->
-  </div><!--end book-wrapper-->
-
-  <div class="book-wrapper">
-    <div class="book">
-      <img src="img/book-covers/book-cover.png" class="responsive center" alt="Sliding Glass Door" />
-      <div class="overlay">
-        <div class="title">
-          <h4>Sliding Glass Door</h4>
-        </div>
-        <div class="author">
-          Scott Poole
-        </div>
-      </div><!--end overlay-->
-    </div><!--end book-->
-    <div class="book-description">
-      <div class="title">
-        <h3>Sliding Glass Door</h3>
-      </div>
-      <div class="author">
-        Scott Poole
-      </div>
-    </div><!--end book description-->
-    <div class="book-social">
-      <div class="twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-      </div>
-      <div class="facebook">
-        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-      </div>
-    </div><!--end books social-->
-  </div><!--end book-wrapper-->
-
-  <div class="book-wrapper">
-    <div class="book">
-      <img src="img/book-covers/book-holder.jpg" class="responsive center" alt="Fudge Day" />
-      <div class="overlay">
-        <div class="title">
-          <h4>Fudge Day</h4>
-        </div>
-        <div class="author">
-          Richard Skalstad
-        </div>
-      </div><!--end overlay-->
-    </div><!--end book-->
-    <div class="book-description">
-      <div class="title">
-        <h3>Fudge Day</h3>
-      </div>
-      <div class="author">
-        Richard Skalstad
-      </div>
-    </div><!--end book description-->
-    <div class="book-social">
-      <div class="twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-      </div>
-      <div class="facebook">
-        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-      </div>
-    </div><!--end books social-->
-  </div><!--end book-wrapper-->
-
-</div>
-
-<div class="middle-content">
-  <div class="writers">
-    <img src="img/writer.png" class="responsive" alt="writer" />
-    <h3>Writers</h3>
-  </div>
-  <div class="readers">
-    <img src="img/reader.png" class="responsive" alt="reader" />
-    <h3>Readers</h3>
-  </div>
-  <div class="colonus">
-    <img src="img/colonus.png" class="responsive" alt="reader" />
-    <h3>Editor's Notes</h3>
-  </div>
-</div>
-
-      
         <article class="type-system-geometric">
   
   
@@ -1368,6 +1256,58 @@ Michelle received a PhD in Creative Writing from Western Michigan University, an
 
 
 </article>
+
+      
+        <h1 class="splash">Featured Books</h1>
+
+<div class="books margin triangle">
+{% for book in site.data.featured %}
+  <div class="book-wrapper">
+    <div class="book">
+      <img src="img/book-covers/{{book.image}}" class="responsive center" alt="{{book.title}}" />
+      <div class="overlay">
+        <div class="title">
+          <h4>{{book.title}}</h4>
+        </div>
+        <div class="author">
+          {{book.author}}
+        </div>
+      </div><!--end overlay-->
+    </div><!--end book-->
+    <div class="book-description">
+      <div class="title">
+        <h3>{{book.title}}</h3>
+      </div>
+      <div class="author">
+        {{book.author}}
+      </div>
+    </div><!--end book description-->
+    <div class="book-social">
+      <div class="twitter">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </div>
+      <div class="facebook">
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+      </div>
+    </div><!--end books social-->
+  </div><!--end book-wrapper-->
+{% endfor %}
+</div>
+
+<div class="middle-content">
+  <div class="writers">
+    <img src="img/writer.png" class="responsive" alt="writer" />
+    <h3>Writers</h3>
+  </div>
+  <div class="readers">
+    <img src="img/reader.png" class="responsive" alt="reader" />
+    <h3>Readers</h3>
+  </div>
+  <div class="colonus">
+    <img src="img/colonus.png" class="responsive" alt="reader" />
+    <h3>Editor's Notes</h3>
+  </div>
+</div>
 
       
         <article class="type-system-geometric">

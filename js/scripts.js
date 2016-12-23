@@ -11,9 +11,13 @@ $(document).ready(function(){
       $("body").removeClass("modal-open");
     }
   });
-$("a").click(function(){
-  $("#modal-1").prop("checked", true);
-});
+$("a").click(function (){
+    var link_href = $(this).attr("href");
+    if (link_href == "#"){
+      $("#modal-1").prop("checked", true);
+    }
+  });
+
   // $("a").on("click", function(e) {
     // e.preventDefault();
     $(".fa").on("change", function() {
