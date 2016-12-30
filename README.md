@@ -12,7 +12,7 @@ _This page demonstrates understanding of Sass mix-ins, media queries, extends, a
 
 * _Clone repository._
 * _Double click "index.html"_
-* _Or view the [Colonus Publishing Mock-Up](https://doohinkus.github.io/colonus) now._
+* _Or view the [Colonus Publishing Mock-Up](https://doohinkus.github.io/colonus-redux/) now._
 
 
 _If "index.html" fails to open when double clicked, then drag the file into your favorite browser._
