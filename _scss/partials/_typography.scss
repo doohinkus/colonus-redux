@@ -19,7 +19,7 @@ h1{
     }
   }
 }
-article.type-system-geometric,  .books, .middle-content, .books-bar {
+article.type-system-geometric,  .books, .middle-content, .books-bar, .strip {
   @include clearfix;
   font-family: $sans-serif;
   // text-align: left;
@@ -116,7 +116,7 @@ article.type-system-geometric,  .books, .middle-content, .books-bar {
     margin-bottom: 0.3em;
   }
 
-  p {
+  p, ol, li {
     font-family: $sans-serif;
     font-size: 1.05em;
     line-height: 1.5em;

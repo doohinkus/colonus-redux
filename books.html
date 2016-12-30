@@ -2,12 +2,12 @@
 layout: default
 title: Colonus Books
 ---
-<div class="books-bar">
+<!-- <div class="books-bar">
   <div class="field">
     <button type="button">Find Your Book</button>
     <input type="text" placeholder="search our catalog" />
   </div>
-</div>
+</div> -->
 <div class="books">
 {% for book in site.data.books %}
   <div class="book-wrapper">
@@ -32,11 +32,11 @@ title: Colonus Books
     </div><!--end book description-->
     <div class="book-social">
       <div class="twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <a href="https://twitter.com/share?text=I want to read {{book.title}}&url=false&hashtags=ColonusPublishing" target="_blank">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
       </div>
-      <div class="facebook">
-        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-      </div>
+
     </div><!--end books social-->
   </div><!--end book-wrapper-->
 {% endfor %}

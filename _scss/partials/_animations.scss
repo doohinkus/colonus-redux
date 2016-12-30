@@ -17,11 +17,11 @@
 }
 @include keyframes(fadein){
   from{
-    margin-top:400px;
+    // margin-top:400px;
     opacity: 0;
   }
   to{
-    margin-top:0;
+    // margin-top:0;
     opacity: 1;
   }
 }
@@ -71,7 +71,8 @@
   @for $i from 1 through 5 {
   .book-wrapper:nth-child(#{$i}) {
     opacity: 0;
-    @include animation (slidein .3s ease-in-out #{$i/3}s forwards);
+    // @include animation (slidein .3s ease-in-out #{$i/3}s forwards);
+    @include animation (fadein .3s ease-in-out #{$i/3}s forwards);
     // your Styles here
   }
 }

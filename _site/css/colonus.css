@@ -25,32 +25,32 @@ h1 {
 .books .book-wrapper .book-description .title h3 {
   font-size: 1.2em; }
 
-article.type-system-geometric, .books, .middle-content, .books-bar {
+article.type-system-geometric, .books, .middle-content, .books-bar, .strip {
   font-family: "Questrial", sans-serif; }
-  article.type-system-geometric::after, .books::after, .middle-content::after, .books-bar::after {
+  article.type-system-geometric::after, .books::after, .middle-content::after, .books-bar::after, .strip::after {
     clear: both;
     content: "";
     display: block; }
-  article.type-system-geometric *:not(img), .books *:not(img), .middle-content *:not(img), .books-bar *:not(img) {
+  article.type-system-geometric *:not(img), .books *:not(img), .middle-content *:not(img), .books-bar *:not(img), .strip *:not(img) {
     text-align: left; }
-  article.type-system-geometric img, .books img, .middle-content img, .books-bar img {
+  article.type-system-geometric img, .books img, .middle-content img, .books-bar img, .strip img {
     text-align: center; }
-  article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p, .books h1, .books h2, .books h3, .books p, .middle-content h1, .middle-content h2, .middle-content h3, .middle-content p, .books-bar h1, .books-bar h2, .books-bar h3, .books-bar p {
+  article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p, .books h1, .books h2, .books h3, .books p, .middle-content h1, .middle-content h2, .middle-content h3, .middle-content p, .books-bar h1, .books-bar h2, .books-bar h3, .books-bar p, .strip h1, .strip h2, .strip h3, .strip p {
     margin: 0;
     color: #23232B; }
-  article.type-system-geometric hr, .books hr, .middle-content hr, .books-bar hr {
+  article.type-system-geometric hr, .books hr, .middle-content hr, .books-bar hr, .strip hr {
     border-bottom: 1px solid #F6F6F6;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     margin: 1.5em 0; }
-  article.type-system-geometric p, .books p, .middle-content p, .books-bar p {
+  article.type-system-geometric p, .books p, .middle-content p, .books-bar p, .strip p {
     color: #23232B;
     line-height: 1.5em; }
-  article.type-system-geometric a, .books a, .middle-content a, .books-bar a {
+  article.type-system-geometric a, .books a, .middle-content a, .books-bar a, .strip a {
     color: #477DCA;
     text-decoration: none; }
-  article.type-system-geometric .type, .books .type, .middle-content .type, .books-bar .type {
+  article.type-system-geometric .type, .books .type, .middle-content .type, .books-bar .type, .strip .type {
     border-bottom: 1px solid;
     display: inline-block;
     font-family: "Questrial", sans-serif;
@@ -60,15 +60,15 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     padding: 0.3em 0;
     text-align: left;
     text-transform: uppercase; }
-  article.type-system-geometric h1, .books h1, .middle-content h1, .books-bar h1 {
+  article.type-system-geometric h1, .books h1, .middle-content h1, .books-bar h1, .strip h1 {
     font-family: "Arvo", serif;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0.5em; }
     @media screen and (min-width: 40em) {
-      article.type-system-geometric h1, .books h1, .middle-content h1, .books-bar h1 {
+      article.type-system-geometric h1, .books h1, .middle-content h1, .books-bar h1, .strip h1 {
         font-size: 2.6em; } }
-  article.type-system-geometric h2, .books h2, .middle-content h2, .books-bar h2 {
+  article.type-system-geometric h2, .books h2, .middle-content h2, .books-bar h2, .strip h2 {
     font-family: "Arvo", serif;
     font-size: 1.2em;
     font-style: italic;
@@ -76,9 +76,9 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     line-height: 1.4em;
     margin-bottom: 1.1em; }
     @media screen and (min-width: 40em) {
-      article.type-system-geometric h2, .books h2, .middle-content h2, .books-bar h2 {
+      article.type-system-geometric h2, .books h2, .middle-content h2, .books-bar h2, .strip h2 {
         font-size: 1.3em; } }
-  article.type-system-geometric code, .books code, .middle-content code, .books-bar code {
+  article.type-system-geometric code, .books code, .middle-content code, .books-bar code, .strip code {
     background: #F7F7F7;
     border-radius: 4.5px;
     border: 1px solid #E0E0E0;
@@ -86,24 +86,24 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     font-style: normal;
     padding: 0.1em 0.4em;
     white-space: nowrap; }
-  article.type-system-geometric h3, .books h3, .middle-content h3, .books-bar h3 {
+  article.type-system-geometric h3, .books h3, .middle-content h3, .books-bar h3, .strip h3 {
     font-family: "Arvo", serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em; }
-  article.type-system-geometric p.date, .books p.date, .middle-content p.date, .books-bar p.date {
+  article.type-system-geometric p.date, .books p.date, .middle-content p.date, .books-bar p.date, .strip p.date {
     color: rgba(35, 35, 43, 0.4);
     font-family: "Arvo", serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em; }
-  article.type-system-geometric p, .books p, .middle-content p, .books-bar p {
+  article.type-system-geometric p, article.type-system-geometric ol, article.type-system-geometric li, .books p, .books ol, .books li, .middle-content p, .middle-content ol, .middle-content li, .books-bar p, .books-bar ol, .books-bar li, .strip p, .strip ol, .strip li {
     font-family: "Questrial", sans-serif;
     font-size: 1.05em;
     line-height: 1.5em;
     margin-bottom: 1.5em; }
-  article.type-system-geometric a.read-more, .books a.read-more, .middle-content a.read-more, .books-bar a.read-more {
+  article.type-system-geometric a.read-more, .books a.read-more, .middle-content a.read-more, .books-bar a.read-more, .strip a.read-more {
     display: inline-block;
     font-family: "Questrial", sans-serif;
     font-size: 0.8em;
@@ -111,16 +111,16 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     margin-left: 0.2em;
     position: relative;
     text-transform: uppercase; }
-    article.type-system-geometric a.read-more span, .books a.read-more span, .middle-content a.read-more span, .books-bar a.read-more span {
+    article.type-system-geometric a.read-more span, .books a.read-more span, .middle-content a.read-more span, .books-bar a.read-more span, .strip a.read-more span {
       font-family: "Questrial", sans-serif;
       font-size: 1.5em;
       font-style: normal;
       position: absolute;
       right: -12px;
       top: -1px; }
-  article.type-system-geometric hr, .books hr, .middle-content hr, .books-bar hr {
+  article.type-system-geometric hr, .books hr, .middle-content hr, .books-bar hr, .strip hr {
     width: 3em; }
-  article.type-system-geometric p.author, .books p.author, .middle-content p.author, .books-bar p.author {
+  article.type-system-geometric p.author, .books p.author, .middle-content p.author, .books-bar p.author, .strip p.author {
     font-family: "Questrial", sans-serif; }
 
 @-webkit-keyframes slidein {
@@ -158,24 +158,18 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
     opacity: 1; } }
 @-webkit-keyframes fadein {
   from {
-    margin-top: 400px;
     opacity: 0; }
   to {
-    margin-top: 0;
     opacity: 1; } }
 @-moz-keyframes fadein {
   from {
-    margin-top: 400px;
     opacity: 0; }
   to {
-    margin-top: 0;
     opacity: 1; } }
 @keyframes fadein {
   from {
-    margin-top: 400px;
     opacity: 0; }
   to {
-    margin-top: 0;
     opacity: 1; } }
 @-webkit-keyframes grow {
   0% {
@@ -255,29 +249,29 @@ article.type-system-geometric, .books, .middle-content, .books-bar {
   animation: fadein 0.9s ease-in-out forwards; }
 .container .book-wrapper:nth-child(1) {
   opacity: 0;
-  -webkit-animation: slidein 0.3s ease-in-out 0.33333s forwards;
-  -moz-animation: slidein 0.3s ease-in-out 0.33333s forwards;
-  animation: slidein 0.3s ease-in-out 0.33333s forwards; }
+  -webkit-animation: fadein 0.3s ease-in-out 0.33333s forwards;
+  -moz-animation: fadein 0.3s ease-in-out 0.33333s forwards;
+  animation: fadein 0.3s ease-in-out 0.33333s forwards; }
 .container .book-wrapper:nth-child(2) {
   opacity: 0;
-  -webkit-animation: slidein 0.3s ease-in-out 0.66667s forwards;
-  -moz-animation: slidein 0.3s ease-in-out 0.66667s forwards;
-  animation: slidein 0.3s ease-in-out 0.66667s forwards; }
+  -webkit-animation: fadein 0.3s ease-in-out 0.66667s forwards;
+  -moz-animation: fadein 0.3s ease-in-out 0.66667s forwards;
+  animation: fadein 0.3s ease-in-out 0.66667s forwards; }
 .container .book-wrapper:nth-child(3) {
   opacity: 0;
-  -webkit-animation: slidein 0.3s ease-in-out 1s forwards;
-  -moz-animation: slidein 0.3s ease-in-out 1s forwards;
-  animation: slidein 0.3s ease-in-out 1s forwards; }
+  -webkit-animation: fadein 0.3s ease-in-out 1s forwards;
+  -moz-animation: fadein 0.3s ease-in-out 1s forwards;
+  animation: fadein 0.3s ease-in-out 1s forwards; }
 .container .book-wrapper:nth-child(4) {
   opacity: 0;
-  -webkit-animation: slidein 0.3s ease-in-out 1.33333s forwards;
-  -moz-animation: slidein 0.3s ease-in-out 1.33333s forwards;
-  animation: slidein 0.3s ease-in-out 1.33333s forwards; }
+  -webkit-animation: fadein 0.3s ease-in-out 1.33333s forwards;
+  -moz-animation: fadein 0.3s ease-in-out 1.33333s forwards;
+  animation: fadein 0.3s ease-in-out 1.33333s forwards; }
 .container .book-wrapper:nth-child(5) {
   opacity: 0;
-  -webkit-animation: slidein 0.3s ease-in-out 1.66667s forwards;
-  -moz-animation: slidein 0.3s ease-in-out 1.66667s forwards;
-  animation: slidein 0.3s ease-in-out 1.66667s forwards; }
+  -webkit-animation: fadein 0.3s ease-in-out 1.66667s forwards;
+  -moz-animation: fadein 0.3s ease-in-out 1.66667s forwards;
+  animation: fadein 0.3s ease-in-out 1.66667s forwards; }
 
 h1 {
   -webkit-animation: fadein 0.5s ease-in-out;
@@ -306,6 +300,13 @@ h1 {
 
 .secret-nav {
   display: none; }
+
+.strip {
+  width: 75%;
+  margin: auto; }
+
+.neg-margin {
+  margin-top: -30px !important; }
 
 .padded {
   padding: 15px; }

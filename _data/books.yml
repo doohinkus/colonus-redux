@@ -1,15 +1,18 @@
   - title: Leaving Parma
     author:  Angie Sarich
-    image: book-cover.png
+    image: leaving-parma.jpg
   - title: Sliding Glass Door
     author: Scott Poole
-    image: book-cover.png
+    image: sliding-glass-door.jpg
   - title: Fudge Day
     author: Richard Skalstad
-    image: book-cover.png
+    image: fudge-day.jpg
   - title: Lawyers In Love
     author: Richard Skalstad
-    image: book-cover.png
+    image: lawyers-in-love.jpg
   - title: Charon's Keep
     author: Richard Skalstad
-    image: book-cover.png
+    image: charons-keep.jpg
+  - title: Girl from Carcosa
+    author: Richard Skalstad
+    image: girl-from-carcosa.jpg

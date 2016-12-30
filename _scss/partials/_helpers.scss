@@ -1,6 +1,15 @@
 .secret-nav{
   display: none;
 }
+.strip{
+  width: $width;
+  margin: auto;
+
+}
+.neg-margin{
+  margin-top: -30px !important;
+
+}
 .padded{
   padding: $padding;
 }
